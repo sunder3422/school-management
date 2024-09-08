@@ -2,6 +2,7 @@ import 'dart:ui';
 
 import 'package:flutter/material.dart';
 import './dashboard/features/features.dart' as feature;
+import './schools/searchschool.dart' as searchschool;
 
 void main() {
   runApp(const MyApp());
@@ -140,7 +141,13 @@ class _MyHomePageState extends State<MyHomePage> {
                       ],
                     ),
                     ElevatedButton(
-                      onPressed: () => {},
+                      onPressed: () => {
+                        Navigator.of(context).push(
+                          MaterialPageRoute(
+                            builder: (context) => const searchschool.MySchool(),
+                          ),
+                        ),
+                      },
                       child: const Text(
                         "LET'S GET STARTED",
                         style: TextStyle(fontWeight: FontWeight.bold),

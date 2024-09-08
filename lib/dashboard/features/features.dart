@@ -9,7 +9,7 @@ Widget appFeatures(String imagepath, String text, Color cl) {
           width: 60,
           height: 60,
         ),
-        SizedBox(
+        const SizedBox(
           height: 10,
         ),
         Container(
@@ -22,7 +22,7 @@ Widget appFeatures(String imagepath, String text, Color cl) {
             padding: const EdgeInsets.all(8.0),
             child: Text(
               text,
-              style: TextStyle(
+              style: const TextStyle(
                   fontWeight: FontWeight.bold,
                   fontSize: 8,
                   color: Colors.white),
